@@ -22,9 +22,7 @@ case $MODE in
     ;;
 
   dual)
-    neolink rtsp --config /config/addons/neolink.toml &
-
-    neolink mqtt --config /config/addons/neolink.toml &
+    neolink mqtt-rtsp --config /config/addons/neolink.toml &
 
     wait
     ;;
